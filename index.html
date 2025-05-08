@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Club | Saraswati Puja</title>
+  <!-- SEO Meta Tags -->
+<meta name="description" content="Join us for Saraswati Puja hosted by ABC Club! Explore event details, gallery, schedule, and more. Celebrate tradition, culture, and devotion with us.">
+<meta name="keywords" content="Saraswati Puja, ABC Club, ABC Club Puja, cultural event, puja gallery, puja schedule, Indian festival, student puja, community event">
+<meta name="author" content="ABC Club">
+<meta property="og:title" content="ABC Club | Saraswati Puja">
+<meta property="og:description" content="Celebrate Saraswati Puja with ABC Club. View schedule, gallery, and more. A vibrant fusion of devotion and celebration.">
+<meta property="og:image" content="abc_logo.png"> <!-- Update with a banner image for better sharing -->
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f5e6cc"> <!-- Use your website’s color palette -->
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="abc_logo.png">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Hamburger (☰) -->
+<button class="hamburger" id="hamburger" onclick="togglesidebar()">☰</button>
+
+<!-- Close Button (✖) inside sidebar -->
+<div class="sidebar" id="sidebar">
+  <button class="close-btn" id="closeBtn" onclick="togglesidebar()">✖</button>
+    <div>
+      <div class="logo-container">
+        <img src="abc_logo.png" alt="ABC Club Logo" />
+      </div>
+      <h1>ABC Club</h1>
+      <nav>
+        <a href="#home" onclick="loadSection('home')">Home</a>
+        <a href="#about" onclick="loadSection('about')">About</a>
+        <a href="#schedule" onclick="loadSection('schedule')">Schedule</a>
+        <a href="#gallery" onclick="loadSection('gallery')">Gallery</a>
+        <a href="#contact" onclick="loadSection('contact')">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <div class="socials">
+        <a href="https://www.facebook.com/groups/205634142866794/" target="_blank">
+          <img src="facebook_icon.png" alt="Facebook" width="30" />
+        </a>
+        <a href="https://www.instagram.com/a.b.cclub?igsh=N3ZtMG55ZDRyOHk1" target="_blank">
+          <img src="instagram_icon.png" alt="Instagram" width="30" />
+        </a>
+        <a href="https://youtube.com/yourchannel" target="_blank">
+          <img src="youtube_icon.png" alt="YouTube" width="30" />
+        </a>
+      </div>
+      
+      <div class="copyright">
+        © 2026 ABC Club. All Rights Reserved.
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content" id="main-content">
+    <!-- Dynamic Content Here -->
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="BgSong.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <button id="audio-control">🔊</button>
+  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
