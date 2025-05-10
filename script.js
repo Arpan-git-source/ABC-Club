@@ -9,6 +9,14 @@ AOS.init({
 const audio = document.getElementById("bg-music");
 const audioBtn = document.getElementById("audio-control");
 
+// Play music after first user interaction
+window.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+  }
+}, { once: true });
+
+// Toggle mute/unmute on button click
 audioBtn.addEventListener("click", () => {
   audio.muted = !audio.muted;
   audioBtn.textContent = audio.muted ? "🔇" : "🔊";
