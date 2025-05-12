@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arpan-git-source.github.io/ABC-Club/sitemap.txt
