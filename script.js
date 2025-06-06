@@ -154,9 +154,9 @@ const content = {
   <div class="contact-container">
     <div class="contact-info">
       <h2>Feel Free to Contact Us</h2>
-      <p><strong>Phone:</strong> (+91) 9547336152</p>
-      <p><strong>Phone:</strong> (+91) 9547336152</p>
-      <p><strong>Email:</strong> info@abc_club.com</p>
+      <p><strong>Phone:</strong> (+91) 7001861255</p>
+      <p><strong>Phone:</strong> (+91) 8972623445</p>
+      <p><strong>Email:</strong> abcclub.official@gmail.com</p>
       <p><strong>Address:</strong> Salboni, Chaktarini, West Bengal, India, Pin- 721147.</p>
     </div>
     <div class="contact-form">
