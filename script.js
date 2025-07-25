@@ -185,21 +185,6 @@ const content = {
     `
 };
 
-function loadSection(section) {
-  const mainContent = document.getElementById("main-content");
-
-  if (content[section]) {
-    mainContent.style.opacity = 0;
-
-    setTimeout(() => {
-      mainContent.innerHTML = content[section];
-      AOS.init(); // re-initialize AOS
-      mainContent.classList.add("fade-in");
-      mainContent.style.opacity = 1;
-    }, 300);
-  }
-}
-
 // Load Home section on initial load
 window.onload = () => loadSection("home");
 
