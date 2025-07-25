@@ -433,17 +433,26 @@ body {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default (desktop) */
   gap: 20px;
   max-width: 1000px;
   margin: auto;
+  transition: grid-template-columns 0.3s ease;
 }
-@media (max-width: 768px) {
+
+/* For tablets (e.g., screens between 769px and 1024px) */
+@media (max-width: 1024px) {
   .gallery-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
   }
 }
 
+/* For mobile (e.g., screens below 768px) */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+  }
+}
 
 .gallery-grid img {
   width: 100%;
