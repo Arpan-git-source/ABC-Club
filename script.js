@@ -296,10 +296,19 @@ window.addEventListener("hashchange", () => {
 const form = document.querySelector('form');
 const thankYouMessage = document.getElementById('thankYouMessage'); // Make sure this exists
 
+// Contact Form Handling
 form.addEventListener('submit', async function (e) {
   e.preventDefault(); // prevent reload
-  const formData = new FormData(form);
 
+  // Get the email input value
+  const email = form.querySelector('input[type="email"]').value;
+  
+  // Email validation check
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    alert("Please enter a valid email (e.g., user@example.com)");
+    return;
+  }
+  const formData = new FormData(form);
   try {
     const response = await fetch(form.action, {
       method: 'POST',
@@ -312,16 +321,12 @@ form.addEventListener('submit', async function (e) {
     if (response.ok) {
       form.style.display = 'none';
       thankYouMessage.style.display = 'block';
-    } else {
-      alert('Something went wrong. Please try again later.');
     }
   } catch (error) {
-    console.error('Error submitting form:', error);
-    alert('Error occurred while submitting the form.');
+    console.error('Error:', error);
+    alert('Failed to submit form. Please try again.');
   }
 });
-
-
 
 // Mobile Menu Functionality
 function togglesidebar() {
