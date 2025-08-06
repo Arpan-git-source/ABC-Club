@@ -106,7 +106,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url('./home.png');
+  background-image: url('./home.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -732,4 +732,5 @@ body {
   transform: translateY(20px);
   transition-property: opacity, transform;
 }
+
 
