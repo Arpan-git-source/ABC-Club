@@ -52,7 +52,7 @@ const content = {
       <div class="about-text">
         <h2 class="about-title">ABC Club</h2>
         <p class="about-tagline"><em>We were, we are, we will be.</em></p>
-        <p>Rooted in tradition, driven by creativity, and united by community — ABC Club, established in 1999, is a Salboni-based socio-cultural organization in Paschim Medinipur, devoted to the celebration of knowledge, art, and collective spirit.</p>
+        <p>Rooted in tradition, driven by creativity, and united by community — <strong>ABC Club, established in 1999, is a Salboni-based socio-cultural organization</strong> in Paschim Medinipur, devoted to the celebration of knowledge, art, and collective spirit.</p>
         <p>As a not-for-profit platform, we focus on Saraswati Puja as more than a ritual — a tribute to wisdom, creativity, and emerging talent.</p>
         <h2 data-aos="fade-up" data-aos-delay="0">Our Vision</h2>
         <ul>
@@ -399,4 +399,5 @@ function togglesidebar() {
 //   © 1999–2026 ABC Club. All Rights Reserved. | Designed & Developed by Arpan Garai
 // </div>
 // `,
+
 
