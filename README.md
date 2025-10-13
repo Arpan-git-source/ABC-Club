@@ -4,8 +4,8 @@ A Dynamic, Responsive Event Website for Saraswati Puja Celebration
 Built using **HTML**, **CSS**, and **JavaScript** with smooth animations and SEO optimization.
 
 🚀 **Live Demo**  
-🔗 Try it here: [https://abc-club.netlify.app/](https://abc-club.netlify.app/)  
-💻 Code Repository: [https://github.com/Arpan-git-source/abc-club-website](https://github.com/Arpan-git-source/abc-club-website)
+🔗 Try it here: (https://abc-club.netlify.app/) 
+💻 Code Repository: (https://github.com/Arpan-git-source/ABC-Club)
 
 ---
 
