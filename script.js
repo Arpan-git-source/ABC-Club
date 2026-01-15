@@ -157,7 +157,7 @@ const content = {
         <div class="contact-form">
           <h2>Interested to work with us?</h2>
           <p>Fill & Submit</p>
-          <form id="contact-form" action="https://formspree.io/f/xwpoobod" method="POST">
+          <form id="contact-form" action="https://formspree.io/f/mreebyve" method="POST">
             <input type="text" name="name" placeholder="Your Name *" required>
             <div class="form-row">
               <input type="email" name="email" placeholder="Your Email *" required>
@@ -399,5 +399,6 @@ function togglesidebar() {
 //   © 1999–2026 ABC Club. All Rights Reserved. | Designed & Developed by Arpan Garai
 // </div>
 // `,
+
 
 
