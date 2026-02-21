@@ -70,6 +70,12 @@ body {
   color: #ffd700;
 }
 
+/* Active Navigation State */
+.sidebar nav a.active-link {
+  color: #ffd700;
+  font-weight: bold;
+}
+
 .socials {
   text-align: center;
 }
@@ -277,9 +283,11 @@ body {
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
+
 /* ======= Mobile Responsive Styles (Only max-width: 768px) ======= */
 
 @media (max-width: 768px) {
+
   /* Sidebar transitions into view from the left */
   .sidebar {
     width: 250px;
@@ -296,7 +304,7 @@ body {
   .sidebar.active {
     transform: translateX(0);
   }
-  
+
 
   /* Hamburger icon styling */
   .hamburger {
@@ -340,7 +348,9 @@ body {
     margin: 0;
   }
 
-  .main-content, .hero, .section {
+  .main-content,
+  .hero,
+  .section {
     margin-left: 0 !important;
     padding-left: 0 !important;
   }
@@ -351,7 +361,9 @@ body {
   }
 
   /* Responsive text & buttons */
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-size: 5vw;
   }
 
@@ -367,8 +379,11 @@ body {
     gap: 10px;
   }
 }
+
 @media (max-width: 768px) {
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
     width: 100%;
     max-width: 100vw;
@@ -381,7 +396,8 @@ body {
 
   .main-content {
     width: 100%;
-    padding: 0 10px; /* optional inner spacing */
+    padding: 0 10px;
+    /* optional inner spacing */
     box-sizing: border-box;
   }
 
@@ -397,6 +413,7 @@ body {
     display: none !important;
   }
 }
+
 .close-btn {
   display: none;
   background: none;
@@ -407,10 +424,14 @@ body {
   border: 1px solid white;
   border-radius: 50%;
   text-align: center;
-  width: 40px;     /* Equal width */
-  height: 40px;    /* Equal height */
-  line-height: 40px; /* Vertically center the X */
-  padding: 0;      /* Remove default padding */
+  width: 40px;
+  /* Equal width */
+  height: 40px;
+  /* Equal height */
+  line-height: 40px;
+  /* Vertically center the X */
+  padding: 0;
+  /* Remove default padding */
   position: absolute;
   top: 20px;
   right: 20px;
@@ -433,7 +454,8 @@ body {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns by default (desktop) */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns by default (desktop) */
   gap: 20px;
   max-width: 1000px;
   margin: auto;
@@ -443,14 +465,16 @@ body {
 /* For tablets (e.g., screens between 769px and 1024px) */
 @media (max-width: 1024px) {
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on tablets */
   }
 }
 
 /* For mobile (e.g., screens below 768px) */
 @media (max-width: 768px) {
   .gallery-grid {
-    grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 column on mobile */
   }
 }
 
@@ -472,7 +496,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -507,13 +531,15 @@ body {
   margin: 0 10px;
   cursor: pointer;
 }
+
 .map-container {
   width: 100%;
   margin: 0 auto;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   overflow: hidden;
 }
+
 .centered-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -538,8 +564,9 @@ body {
 .map-container {
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+
 .contact-section {
   padding: 60px 20px;
   background-color: #0d0d0d;
@@ -678,7 +705,8 @@ body {
   font-size: 18px;
 }
 
-#prev-btn, #next-btn {
+#prev-btn,
+#next-btn {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -694,7 +722,8 @@ body {
   transition: 0.3s;
 }
 
-#prev-btn:hover, #next-btn:hover {
+#prev-btn:hover,
+#next-btn:hover {
   background: rgba(255, 215, 0, 0.8);
 }
 
@@ -721,6 +750,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -732,5 +762,3 @@ body {
   transform: translateY(20px);
   transition-property: opacity, transform;
 }
-
-
