@@ -87,6 +87,14 @@ const content = {
     </section>
   `,
   gallery: `
+    <section class="gallery-section" id="gallery2026" data-aos="fade-up">
+      <h2 class="gallery-title">Gallery 2026</h2>
+      <div class="gallery-grid">
+        <a href="img%2016.jpeg" class="gallery-item" data-index="0"><img src="img%2016.jpeg" alt="Gallery Image 1"></a>
+        <a href="img%2017.jpeg" class="gallery-item" data-index="1"><img src="img%2017.jpeg" alt="Gallery Image 2"></a>
+        <a href="img%2018.jpg" class="gallery-item" data-index="2"><img src="img%2018.jpg" alt="Gallery Image 3"></a>
+      </div>
+    </section>
     <section class="gallery-section" id="gallery2025" data-aos="fade-up">
       <h2 class="gallery-title">Gallery 2025</h2>
       <div class="gallery-grid">
@@ -412,6 +420,7 @@ function togglesidebar() {
 //   © 1999–2026 ABC Club. All Rights Reserved. | Designed & Developed by Arpan Garai
 // </div>
 // `,
+
 
 
 
