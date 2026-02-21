@@ -191,6 +191,7 @@ function loadSection(section) {
 
     setTimeout(() => {
       mainContent.innerHTML = content[section];
+      
       // Re-init AOS so animations work on newly-inserted elements
       AOS.init({
         duration: 1200,
@@ -205,6 +206,18 @@ function loadSection(section) {
       // Section-specific initializers
       if (section === 'gallery') initLightbox();
       if (section === 'contact') initContactForm();
+
+      // ---> NEW CODE: Update Active Navigation Link <---
+      const navLinks = document.querySelectorAll('.sidebar nav a');
+      navLinks.forEach(link => {
+        // Remove active class from all links
+        link.classList.remove('active-link');
+        // Add active class to the currently clicked link
+        if (link.getAttribute('href') === '#' + section) {
+          link.classList.add('active-link');
+        }
+      });
+      // ------------------------------------------------
 
       resolve();
     }, 300); // matches your fade timing
@@ -399,6 +412,7 @@ function togglesidebar() {
 //   © 1999–2026 ABC Club. All Rights Reserved. | Designed & Developed by Arpan Garai
 // </div>
 // `,
+
 
 
 
